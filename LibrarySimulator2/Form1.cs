@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace LibrarySimulator2
 {
-    public partial class Form1 : Form
+    public partial class login_page : Form
     {
-        public Form1()
+        public login_page()
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void no_account_link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Close(); 
+            Form2 register = new Form2();
+            register.Show();
+
+        }
     }
+
+
+
 }
