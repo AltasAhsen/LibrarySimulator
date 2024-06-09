@@ -10,12 +10,18 @@ using System.Windows.Forms;
 
 namespace LibrarySimulator2
 {
-    public partial class Form2 : Form
+    public partial class Operations : Form
     {
-        public Form2()
+        public bool isVisible = false;
+        public Operations()
         {
             InitializeComponent();
         }
 
+        private void Operations_Load(object sender, EventArgs e)
+        {
+            isVisible = true;
+            
+        }
     }
 }

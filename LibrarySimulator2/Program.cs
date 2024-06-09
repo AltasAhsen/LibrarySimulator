@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,7 +17,9 @@ namespace LibrarySimulator2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new login_page());
+            Login_page login = new Login_page();
+            login.Show();
+            Application.Run();
         }
     }
 }
